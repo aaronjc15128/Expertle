@@ -856,32 +856,6 @@ $(document).ready(function(){
             }
         });
 
-        $("#abouttext").hide();
-        $("#aboutbtn").on({
-            click: function(){
-                $("#aboutwindow").fadeIn();
-                $("#aboutwindow_overlayshadow").fadeIn();
-            },
-            mouseenter: function(){
-                $("#abouttext").show();
-            },
-            mouseleave: function(){
-                $("#abouttext").hide();
-            }
-        });
-
-
-        /* AFW */
-
-        $("#aboutwindow").hide();
-        $("#aboutwindow_overlayshadow").hide();
-
-        $("#aboutwindow_closebtn").click(function(){
-            $("#aboutwindow").fadeOut();
-            $("#aboutwindow_overlayshadow").fadeOut();
-        });
-
-
         /* FW */
 
         $("#startwindow").hide();
