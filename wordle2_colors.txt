@@ -1,0 +1,4 @@
+green = #4C8248
+yellow = #8F7000
+grey = #3A3A3C
+red = #D52F2F

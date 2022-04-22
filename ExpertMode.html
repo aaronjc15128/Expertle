@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Wordle 2.0 - Expert</title>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/c8e874c7b8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div>
+            <div class="center">
+                <p class="title">WORDLE 2.0</p>
+                <i id="giveupbtn" class="fa-solid fa-circle-xmark fa-2xl"></i>
+                <div class="z100">
+                    <p id="giveuptext">Give Up?</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        
+        <div class="space80"></div>
+    
+        <div class="expert_board_container center">
+            <div id="r1b1" class="box"></div>
+            <div id="r1b2" class="box"></div>
+            <div id="r1b3" class="box"></div>
+            <div id="r1b4" class="box"></div>
+            <div id="r1b5" class="box"></div>
+            <div id="r1by" class="ybox"></div>
+            <div id="r1bg" class="gbox"></div>
+            <div id="r2b1" class="box"></div>
+            <div id="r2b2" class="box"></div>
+            <div id="r2b3" class="box"></div>
+            <div id="r2b4" class="box"></div>
+            <div id="r2b5" class="box"></div>
+            <div id="r2by" class="ybox"></div>
+            <div id="r2bg" class="gbox"></div>
+            <div id="r3b1" class="box"></div>
+            <div id="r3b2" class="box"></div>
+            <div id="r3b3" class="box"></div>
+            <div id="r3b4" class="box"></div>
+            <div id="r3b5" class="box"></div>
+            <div id="r3by" class="ybox"></div>
+            <div id="r3bg" class="gbox"></div>
+            <div id="r4b1" class="box"></div>
+            <div id="r4b2" class="box"></div>
+            <div id="r4b3" class="box"></div>
+            <div id="r4b4" class="box"></div>
+            <div id="r4b5" class="box"></div>
+            <div id="r4by" class="ybox"></div>
+            <div id="r4bg" class="gbox"></div>
+            <div id="r5b1" class="box"></div>
+            <div id="r5b2" class="box"></div>
+            <div id="r5b3" class="box"></div>
+            <div id="r5b4" class="box"></div>
+            <div id="r5b5" class="box"></div>
+            <div id="r5by" class="ybox"></div>
+            <div id="r5bg" class="gbox"></div>
+            <div id="r6b1" class="box"></div>
+            <div id="r6b2" class="box"></div>
+            <div id="r6b3" class="box"></div>
+            <div id="r6b4" class="box"></div>
+            <div id="r6b5" class="box"></div>
+            <div id="r6by" class="ybox"></div>
+            <div id="r6bg" class="gbox"></div>
+        </div>
+    
+        <div class="space120"></div>
+    
+        <div>
+            <div class="center">
+                <button id="kybdbtn_Q" class="kybdbtn">Q</button>
+                <button id="kybdbtn_W" class="kybdbtn">W</button>
+                <button id="kybdbtn_E" class="kybdbtn">E</button>
+                <button id="kybdbtn_R" class="kybdbtn">R</button>
+                <button id="kybdbtn_T" class="kybdbtn">T</button>
+                <button id="kybdbtn_Y" class="kybdbtn">Y</button>
+                <button id="kybdbtn_U" class="kybdbtn">U</button>
+                <button id="kybdbtn_I" class="kybdbtn">I</button>
+                <button id="kybdbtn_O" class="kybdbtn">O</button>
+                <button id="kybdbtn_P" class="kybdbtn">P</button>
+            </div>
+            <div class="center">
+                <button id="kybdbtn_A" class="kybdbtn">A</button>
+                <button id="kybdbtn_S" class="kybdbtn">S</button>
+                <button id="kybdbtn_D" class="kybdbtn">D</button>
+                <button id="kybdbtn_F" class="kybdbtn">F</button>
+                <button id="kybdbtn_G" class="kybdbtn">G</button>
+                <button id="kybdbtn_H" class="kybdbtn">H</button>
+                <button id="kybdbtn_J" class="kybdbtn">J</button>
+                <button id="kybdbtn_K" class="kybdbtn">K</button>
+                <button id="kybdbtn_L" class="kybdbtn">L</button>
+            </div>
+            <div class="center">
+                <button id="kybdbtn_ENTER" class="kybdbtn_entr">ENTER</button>
+                <button id="kybdbtn_Z" class="kybdbtn">Z</button>
+                <button id="kybdbtn_X" class="kybdbtn">X</button>
+                <button id="kybdbtn_C" class="kybdbtn">C</button>
+                <button id="kybdbtn_V" class="kybdbtn">V</button>
+                <button id="kybdbtn_B" class="kybdbtn">B</button>
+                <button id="kybdbtn_N" class="kybdbtn">N</button>
+                <button id="kybdbtn_M" class="kybdbtn">M</button>
+                <button id="kybdbtn_BACKSPACE" class="kybdbtn_bksp"><i class="fa-solid fa-delete-left fa-xl"></i></button>
+            </div>
+        </div>
+
+        <div id="startwindow_overlayshadow" class="bodyoverlayshadow"></div>
+
+        <div id="startwindow" class="floatingwindow">
+            <button id="howtoplaybtn" class="windowbtn">How to Play</button>
+            <button id="resultbtn" class="windowbtn">Result</button>
+            <button id="answerbtn" class="windowbtn">Answer</button>
+            <button id="selectdifficultybtn" class="windowbtn">Select Difficulty</button>
+            <hr class="hrwindow">
+
+            <div id="selectdifficultymenu" class="startwindowmenu">
+                <div>
+                    <a href="EasyMode.html"><button id="easybtn" class="btn">Easy</button></a>
+                    <br><br><br><a href="NormalMode.html"><button id="normalbtn" class="btn">Normal</button></a>
+                    <br><br><br><a href="HardMode.html"><button id="hardbtn" class="btn">Hard</button></a>
+                    <br><br><br><a href="ExpertMode.html"><button id="expertbtn" class="btn">Expert</button></a>
+                </div>
+                <div>
+                    <p id="easyinfo" class="infotext">Uses almost 10x less English 5-letter words for solutions.<br><br>Note: This does not affect guesses, you will be able to guess any valid 5-letter word.</p>
+                    <p id="normalinfo" class="infotext">Classic Wordle!<br><br>Note: Some words used in the original Wordle game are not used in this game due to the words being either highly unknown or generally just not fun to play with.</p>
+                    <p id="hardinfo" class="infotext">Classic Wordle Hard Mode.</p>
+                    <p id="expertinfo" class="infotext">Yellows & Greens will display to the side of the word.<br><br>This means that the letters that are Yellow/Green will not show and instead only the total number of Yellows/Greens in the word will show.</p>
+                </div>
+            </div>
+
+            <div id="expert_resultmenu" class="startwindowmenu">
+                <div>
+                    <p id="resultword" class="fs32 serif"></p>
+                    <p>Attempts:&nbsp;&nbsp;<span id="resultattempts"></span></p>
+                    <p>Mode:&nbsp;&nbsp;Expert</p>
+                    <p>Time Taken:&nbsp;&nbsp;<span id="resulttime">???</span></p>
+                </div>
+                <div>
+                    <br><div id="expert_resultboxes">
+                        <div id="r1b1r" class="rsmlbox"></div>
+                        <div id="r1b2r" class="rsmlbox"></div>
+                        <div id="r1b3r" class="rsmlbox"></div>
+                        <div id="r1b4r" class="rsmlbox"></div>
+                        <div id="r1b5r" class="rsmlbox"></div>
+                        <div id="r1byr" class="yysmlbox"></div>
+                        <div id="r1bgr" class="ggsmlbox"></div>
+                        <div id="r2b1r" class="rsmlbox"></div>
+                        <div id="r2b2r" class="rsmlbox"></div>
+                        <div id="r2b3r" class="rsmlbox"></div>
+                        <div id="r2b4r" class="rsmlbox"></div>
+                        <div id="r2b5r" class="rsmlbox"></div>
+                        <div id="r2byr" class="yysmlbox"></div>
+                        <div id="r2bgr" class="ggsmlbox"></div>
+                        <div id="r3b1r" class="rsmlbox"></div>
+                        <div id="r3b2r" class="rsmlbox"></div>
+                        <div id="r3b3r" class="rsmlbox"></div>
+                        <div id="r3b4r" class="rsmlbox"></div>
+                        <div id="r3b5r" class="rsmlbox"></div>
+                        <div id="r3byr" class="yysmlbox"></div>
+                        <div id="r3bgr" class="ggsmlbox"></div>
+                        <div id="r4b1r" class="rsmlbox"></div>
+                        <div id="r4b2r" class="rsmlbox"></div>
+                        <div id="r4b3r" class="rsmlbox"></div>
+                        <div id="r4b4r" class="rsmlbox"></div>
+                        <div id="r4b5r" class="rsmlbox"></div>
+                        <div id="r4byr" class="yysmlbox"></div>
+                        <div id="r4bgr" class="ggsmlbox"></div>
+                        <div id="r5b1r" class="rsmlbox"></div>
+                        <div id="r5b2r" class="rsmlbox"></div>
+                        <div id="r5b3r" class="rsmlbox"></div>
+                        <div id="r5b4r" class="rsmlbox"></div>
+                        <div id="r5b5r" class="rsmlbox"></div>
+                        <div id="r5byr" class="yysmlbox"></div>
+                        <div id="r5bgr" class="ggsmlbox"></div>
+                        <div id="r6b1r" class="rsmlbox"></div>
+                        <div id="r6b2r" class="rsmlbox"></div>
+                        <div id="r6b3r" class="rsmlbox"></div>
+                        <div id="r6b4r" class="rsmlbox"></div>
+                        <div id="r6b5r" class="rsmlbox"></div>
+                        <div id="r6byr" class="yysmlbox"></div>
+                        <div id="r6bgr" class="ggsmlbox"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="answermenu" class="startwindowmenu">
+                <p id="answermenu_word" class="serif fs32"></p>
+                <p id="answerword_phonetic" class="serif fs20"></p>
+                <p id="answerword_wordclass" class="serif fs20"></p>
+                <p id="answerword_definition" class="serif fs18">No Definitions Found<br><br>Sorry pal, we couldn't find definitions for the word you were looking for.<br><br>You can try the search again at later time or head to the web instead.</p>
+                <p id="answerword_origin" class="serif fs18"></p>
+                <p id="answerword_example" class="serif fs18"></p>
+            </div>
+
+            <div id="howtoplaymenu" class="startwindowmenu">
+                <div>
+                    <p>Guess the WORDLE in six tries. Each guess must be a valid five-letter word.<br>Hit the enter button to submit. After each guess, the color of the tiles will change to show how close your guess was to the word.</p>
+                </div>
+                <br>
+                <div id="howtoplaymenu_examples">
+                    <div>
+                        <p><span class="bold">Examples</span></p>
+                        <br><p>The letter <span class="bold">W</span> is in the word and in the correct spot.</p>
+                        <br><p>The letter <span class="bold">I</span> is in the word but in the wrong spot.</p>
+                        <br><p>The letter <span class="bold">U</span> is not in the word in any spot.</p>
+                    </div>
+                    <div>
+                        <br><br><br><br><div class="gsmlbox">W</div><div class="smlbox">E</div><div class="smlbox">A</div><div class="smlbox">R</div><div class="smlbox">Y</div>
+                        <br><br><br><br><div class="smlbox">P</div><div class="ysmlbox">I</div><div class="smlbox">L</div><div class="smlbox">L</div><div class="smlbox">S</div>
+                        <br><br><br><br><div class="smlbox">V</div><div class="smlbox">A</div><div class="bsmlbox">U</div><div class="smlbox">G</div><div class="smlbox">E</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

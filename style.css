@@ -1,0 +1,347 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #101010;
+    color: white;
+}
+
+.serif {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.inline {
+    display: inline-flex;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+hr {
+    border-color: #323232;
+}
+
+.fs32 {
+    font-size: 32px;
+}
+
+.fs20 {
+    font-size: 20px;
+}
+
+.fs18 {
+    font-size: 18px;
+}
+
+.space80 {
+    padding: 80px;
+}
+
+.space120 {
+    padding: 120px;
+}
+
+.z100 {
+    position: absolute;
+    z-index: 100;
+}
+
+.btn {
+    border: 2px solid white;
+    border-radius: 3px;
+    background-color: transparent;
+    color: white;
+    padding: 16px 32px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #CCCCCC;
+}
+
+#titlehr {
+    width: 100%;
+}
+
+#giveupbtn {
+    position: relative;
+    right: -800px;
+    top: 50px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#giveupbtn:hover {
+    opacity: 80%;
+}
+
+#giveuptext{
+    position: relative;
+    right: -800px;
+    top: 25px;
+}
+
+
+/* Floating Window */
+
+.bodyoverlayshadow {
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+.floatingwindow {
+    position: absolute;
+    z-index: 100;
+    border-radius: 6px;
+    height: 600px;
+    width: 800px;
+    top: 50%;
+    margin-top: -300px;
+    left: 50%;
+    margin-left: -400px;
+    background-color: #101010;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.windowbtn {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 0px 0px 12px 0px;
+    margin: 30px 20px 5px 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hrwindow {
+    position: absolute;
+    top: 54px;
+    width: 100%;
+}
+
+#selectdifficultymenu {
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    display: grid;
+    grid-template-columns: 300px 400px;
+    grid-template-rows: auto;
+}
+
+#resultmenu {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    display: grid;
+    grid-template-columns: 500px 200px;
+    grid-template-rows: auto;
+}
+
+#expert_resultmenu {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    display: grid;
+    grid-template-columns: 450px 300px;
+    grid-template-rows: auto;
+}
+
+#howtoplaymenu {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+}
+
+#answermenu {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    width: 620px;
+}
+
+#howtoplaymenu_examples {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+
+.infotext {
+    position: absolute;
+    font-size: 16px;
+}
+
+.smlbox {
+    display: inline;
+    padding: 10px 12px;
+    border: 2px solid #646464;
+    margin: 2.5px;
+    background-color: transparent;
+    height: 16px;
+    width: 8px;
+}
+
+.gsmlbox {
+    display: inline;
+    padding: 10px 12px;
+    border: 2px solid #4C8248;
+    margin: 2.5px;
+    background-color: #4C8248;
+    height: 16px;
+    width: 8px;
+}
+
+.ysmlbox {
+    display: inline;
+    padding: 10px 12px;
+    border: 2px solid #8F7000;
+    margin: 2.5px;
+    background-color: #8F7000;
+    height: 16px;
+    width: 8px;
+}
+
+.bsmlbox {
+    display: inline;
+    padding: 10px 12px;
+    border: 2px solid #3A3A3C;
+    margin: 2.5px;
+    background-color: #3A3A3C;
+    height: 16px;
+    width: 8px;
+}
+
+.rsmlbox {
+    padding: 10px 12px;
+    border: 2px solid #646464;
+    margin: 2.5px;
+    background-color: transparent;
+    height: 16px;
+    width: 8px;
+}
+
+.ggsmlbox {
+    display: inline;
+    padding: 10px 12px;
+    border: 2px solid #4C8248;
+    margin: 2.5px;
+    background-color: #4C824812;
+    height: 16px;
+    width: 8px;
+}
+
+.yysmlbox {
+    display: inline;
+    padding: 10px 12px;
+    border: 2px solid #8F7000;
+    margin: 2.5px;
+    background-color: #8F700012;
+    height: 16px;
+    width: 8px;
+}
+
+#resultboxes {
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+#expert_resultboxes {
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px 40px 40px;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+
+/* Board */
+
+.box {
+    padding: 20px 24px;
+    border: 2px solid #646464;
+    margin: 2.5px;
+    background-color: transparent;
+    height: 16px;
+    width: 8px;
+}
+
+.ybox {
+    padding: 20px 24px;
+    border: 2px solid #8F7000;
+    margin: 2.5px;
+    background-color: #8F700012;
+    height: 16px;
+    width: 8px;
+}
+
+.gbox {
+    padding: 20px 24px;
+    border: 2px solid #4C8248;
+    margin: 2.5px;
+    background-color: #4C824812;
+    height: 16px;
+    width: 8px;
+}
+
+.board_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+.expert_board_container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+
+/* Keyboard */
+
+.kybdbtn, .kybdbtn_entr {
+    padding: 15px;
+    border: 2px solid #646464;
+    border-radius: 4px;
+    margin: 2px;
+    color: white;
+    background-color: #646464;
+    cursor: pointer;
+}
+
+.kybdbtn_bksp {
+    padding: 8px;
+    border: 2px solid #646464;
+    border-radius: 4px;
+    margin: 2px;
+    color: white;
+    background-color: #646464;
+    cursor: pointer;
+}
+
+.kybdbtn:hover, .kybdbtn_entr:hover, .kybdbtn_bksp:hover {
+    opacity: 80%;
+}
