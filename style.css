@@ -4,15 +4,6 @@ body {
     color: white;
 }
 
-a, a:link, a:visited {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    opacity: 50%;
-}
-
 .serif {
     font-family: 'Times New Roman', Times, serif;
 }
@@ -45,10 +36,6 @@ hr {
 
 .fs32 {
     font-size: 32px;
-}
-
-.fs28 {
-    font-size: 28px;
 }
 
 .fs20 {
@@ -111,47 +98,6 @@ hr {
     position: relative;
     right: -800px;
     top: 25px;
-}
-
-#aboutbtn {
-    position: relative;
-    left: -800px;
-    top: 50px;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-#aboutbtn:hover {
-    opacity: 80%;
-}
-
-#abouttext{
-    position: relative;
-    left: -800px;
-    top: 25px;
-}
-
-
-/* About Floating Window */
-
-#aboutwindow_closebtn {
-    position: relative;
-    top: -5px;
-    right: -735px;
-}
-
-#aboutwindow_closebtn:hover {
-    opacity: 80%;
-}
-
-#aboutmenu {
-    position: relative;
-    left: 80px;
-    width: 620px;
-}
-
-#abouttitle {
-    margin-bottom: 35px;
 }
 
 
