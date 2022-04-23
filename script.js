@@ -2,7 +2,7 @@ $(document).ready(function(){
     let page = window.location.pathname.split("/").pop();
     console.log(page);
     
-    if (page == "Wordle2.html") {
+    if (page == "Expertle.html") {
         $("#startwindow").hide();
         $("#startwindow_overlayshadow").hide();
         setTimeout(function(){
