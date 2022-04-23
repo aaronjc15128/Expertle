@@ -27,8 +27,9 @@ a:hover {
 }
 
 .title {
-    font-size: 32px;
-    font-weight: 1000;
+    font-family: 'Nunito', sans-serif;
+    font-size: 36px;
+    margin: 26px 0px;
 }
 
 .hidden {
@@ -109,7 +110,7 @@ hr {
 
 #giveuptext{
     position: relative;
-    right: -800px;
+    right: -825px;
     top: 25px;
 }
 
@@ -127,7 +128,7 @@ hr {
 
 #abouttext{
     position: relative;
-    left: -800px;
+    left: -825px;
     top: 25px;
 }
 
