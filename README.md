@@ -1,6 +1,6 @@
 # Expertle
 
-Remake of the hit game [Wordle](www.google.com) with difficulty levels, word definitions, and much more.
+Remake of the hit game [Wordle](https://www.nytimes.com/games/wordle/index.html) with difficulty levels, word definitions, and much more.
 
 ## Difficulties
 There are 4 difficulty levels: Easy, Normal, Hard & Expert.
@@ -18,7 +18,7 @@ This may seem immposible at a glance, however you are given some information.
 
 When inputting a word, you are given the number of yellows and greens in the word, but not the position of them.
 
-Playing the game will give you much more clarity than what this markdown file could ever give :) .
+Playing the game will give you much more clarity than what this markdown file could ever give :)
 
 ## Word Definitions
 When completing a game, you will get the definition of the solution word, along with the phonetic, an example and even the history of the word.
