@@ -9,12 +9,10 @@ Normal and Hard modes are the exact same as those in the original Wordle game.
 
 Easy Mode uses the top 10% easiest words used in Normal Mode for solutions.
 
-Expert Mode is a great twist on the game and the details how to play can be found below.
-
 ## Expert Mode
 Expert Mode is the usual Wordle but without showing any hints.
 
-This may seem immposible at a glance, however you are given some information.
+This may seem immpossible at a glance, however you are given *some* information.
 
 When inputting a word, you are given the number of yellows and greens in the word, but not the position of them.
 
@@ -23,12 +21,12 @@ Playing the game will give you much more clarity than what this markdown file co
 ## Word Definitions
 When completing a game, you will get the definition of the solution word, along with the phonetic, an example and even the history of the word.
 
-Note: Some of this information may not be shown depending on whether the information can be retrieved or not.
+Note: Some of this information may not be shown depending on whether the information can be found or not.
 
 ## Result Menu
 The result menu gives you statistics based on your game.
 
-These include attempts, the mode, and time taken.
+These include attempts, mode, and time taken.
 
 ## Final Note
 Hope you enjoy playing this fun take on Wordle.
