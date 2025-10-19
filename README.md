@@ -33,8 +33,6 @@ Hope you enjoy playing this fun take on Wordle.
 
 This was made just for fun and to make Wordle accessible for all users.
 
-Like mentioned in the about menu of the game, if there has been any copyright/trademark infringements, please contact me to ensure that they will be fixed/removed within 72 hours.
-
 Note: The webgame is best experienced on a PC/Laptop.
 
 Developed by Aaron Chauhan
